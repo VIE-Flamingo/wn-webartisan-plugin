@@ -1,6 +1,6 @@
 <?php
 
-namespace VojtaSvoboda\WebArtisan;
+namespace Winter\WebArtisan;
 
 use Backend;
 use System\Classes\PluginBase;
@@ -18,8 +18,8 @@ class Plugin extends PluginBase
     public function pluginDetails()
     {
         return [
-            'name' => 'vojtasvoboda.webartisan::lang.plugin.name',
-            'description' => 'vojtasvoboda.webartisan::lang.plugin.label',
+            'name' => 'winter.webartisan::lang.plugin.name',
+            'description' => 'winter.webartisan::lang.plugin.label',
             'author' => 'Vojta Svoboda',
             'icon' => 'icon-forward',
         ];
@@ -30,13 +30,13 @@ class Plugin extends PluginBase
         return [
             'settings' => [
                 'category' => 'system::lang.system.categories.system',
-                'label' => 'vojtasvoboda.webartisan::lang.settings.label',
-                'description' => 'vojtasvoboda.webartisan::lang.settings.description',
+                'label' => 'winter.webartisan::lang.settings.label',
+                'description' => 'winter.webartisan::lang.settings.description',
                 'icon' => 'icon-forward',
-                'class' => 'VojtaSvoboda\WebArtisan\Models\Settings',
+                'class' => 'Winter\WebArtisan\Models\Settings',
                 'order' => 600,
                 'permissions' => [
-                    'vojtasvoboda.webartisan.access_settings',
+                    'winter.webartisan.access_settings',
                 ],
             ],
         ];
@@ -45,9 +45,9 @@ class Plugin extends PluginBase
     public function registerPermissions()
     {
         return [
-            'vojtasvoboda.webartisan.access_settings' => [
-                'tab' => 'vojtasvoboda.webartisan::lang.plugin.name',
-                'label' => 'vojtasvoboda.webartisan::lang.permissions.settings'
+            'winter.webartisan.access_settings' => [
+                'tab' => 'winter.webartisan::lang.plugin.name',
+                'label' => 'winter.webartisan::lang.permissions.settings'
             ],
         ];
     }

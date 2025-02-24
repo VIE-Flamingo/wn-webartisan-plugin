@@ -1,9 +1,9 @@
-<?php namespace VojtaSvoboda\WebArtisan\Classes;
+<?php namespace Winter\WebArtisan\Classes;
 
 use Artisan;
 use Config;
 use Lang;
-use VojtaSvoboda\WebArtisan\Models\Settings;
+use Winter\WebArtisan\Models\Settings;
 
 class CommandRunner
 {
@@ -24,8 +24,8 @@ class CommandRunner
     public function __construct(Settings $settings)
     {
         $this->settings = $settings;
-        $this->allowedCommands = Config::get('vojtasvoboda.webartisan::allowedCommands');
-        $this->allowedPluginCommands = Config::get('vojtasvoboda.webartisan::allowedPluginCommands');
+        $this->allowedCommands = Config::get('winter.webartisan::allowedCommands');
+        $this->allowedPluginCommands = Config::get('winter.webartisan::allowedPluginCommands');
     }
 
     /**
@@ -110,12 +110,12 @@ class CommandRunner
     {
         // check commands whitelist
         if ($plugin === null && !in_array($command, $this->allowedCommands)) {
-            return Lang::get('vojtasvoboda.webartisan::lang.commandrunner.command_not_allowed');
+            return Lang::get('winter.webartisan::lang.commandrunner.command_not_allowed');
         }
 
         // check plugin commands whitelist
         if ($plugin !== null && !in_array($command, $this->allowedPluginCommands)) {
-            return Lang::get('vojtasvoboda.webartisan::lang.commandrunner.command_not_allowed');
+            return Lang::get('winter.webartisan::lang.commandrunner.command_not_allowed');
         }
 
         // get hash
@@ -123,12 +123,12 @@ class CommandRunner
 
         // if hash not set
         if (strlen($localHash) < 16) {
-            return Lang::get('vojtasvoboda.webartisan::lang.commandrunner.controll_hash');
+            return Lang::get('winter.webartisan::lang.commandrunner.controll_hash');
         }
 
         // if hash doesn't match
         if ($hash != $localHash) {
-            return Lang::get('vojtasvoboda.webartisan::lang.commandrunner.wrong_hash');
+            return Lang::get('winter.webartisan::lang.commandrunner.wrong_hash');
         }
 
         return true;

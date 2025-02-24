@@ -1,10 +1,10 @@
 fields:
     hash:
-        label: vojtasvoboda.webartisan::lang.settings_fields.hash_label
+        label: winter.webartisan::lang.settings_fields.hash_label
         required: true
         type: text
-        comment: vojtasvoboda.webartisan::lang.settings_fields.hash_comment
+        comment: winter.webartisan::lang.settings_fields.hash_comment
     hint:
-        label: vojtasvoboda.webartisan::lang.settings_fields.hint_label
+        label: winter.webartisan::lang.settings_fields.hint_label
         type: partial
         path: $/vojtasvoboda/webartisan/models/settings/partials/_howto.htm

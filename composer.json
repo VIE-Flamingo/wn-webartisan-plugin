@@ -1,17 +1,17 @@
 {
     "name": "vojtasvoboda/webartisan-plugin",
-    "type": "october-plugin",
+    "type": "winter-plugin",
     "extra": {
         "installer-name": "webartisan"
     },
-    "description": "Webartisan plugin for OctoberCMS",
+    "description": "Webartisan plugin for WinterCMS",
     "homepage": "https://github.com/vojtasvoboda/oc-webartisan-plugin",
-    "keywords": ["october", "plugin", "webartisan"],
+    "keywords": ["winter", "plugin", "webartisan"],
     "license": "MIT",
     "authors": [
         {
             "name": "Vojta Svoboda",
-            "email": "vojtasvoboda.cz@gmail.com",
+            "email": "winter.cz@gmail.com",
             "role": "Developer"
         }
     ],

@@ -1,4 +1,4 @@
-# Web Artisan plugin for OctoberCMS
+# Web Artisan plugin for WinterCMS
 
 [![Codacy](https://img.shields.io/codacy/grade/5e98d8323ff64df59cb2be7f5db579f4.svg)](https://www.codacy.com/app/vojtasvoboda/oc-webartisan-plugin)
 [![Scrutinizer Coverage](https://img.shields.io/scrutinizer/g/vojtasvoboda/oc-webartisan-plugin.svg)](https://scrutinizer-ci.com/g/vojtasvoboda/oc-webartisan-plugin/?branch=master)
@@ -16,7 +16,7 @@ This could be useful:
 - when you **want to run commands** by services like IFTTT, Zapier, etc.
 - for deployment and automated tasks
 
-Tested with the latest stable OctoberCMS build 419 (with Laravel 5.5).
+Tested with the latest stable WinterCMS build 419 (with Laravel 5.5).
 
 ## Important
 
@@ -45,10 +45,10 @@ Run command `schedule:run` by curl:
 
 ## Available commands
 
-Whitelist: auth:clear-resets, cache:clear, october:update, queue:flush, queue:forget, queue:restart, queue:retry, queue:work,
+Whitelist: auth:clear-resets, cache:clear, winter:update, queue:flush, queue:forget, queue:restart, queue:retry, queue:work,
 route:clear, schedule:run, view:clear.
 
-Wants more? [Override plugin's config file](http://octobercms.com/docs/plugin/settings#file-configuration) and add your commands as you wish.
+Wants more? [Override plugin's config file](http://wintercms.com/docs/plugin/settings#file-configuration) and add your commands as you wish.
 
 ## Queued commands
 
@@ -61,12 +61,12 @@ For running queue commands just put prefix `queued` before command
 
 for example
 
-`http://www.domain.com/artisan/v1/queued/october/update/1234567890abcdef`
+`http://www.domain.com/artisan/v1/queued/winter/update/1234567890abcdef`
 
 ## TODO
 
 - [ ] pass Artisan to CommandRunner through constructor as Illuminate\Console\Application
-- [ ] set hash also by config (when you want to fire october:up on stage server)
+- [ ] set hash also by config (when you want to fire winter:up on stage server)
 
 ## Contributing
 
@@ -74,4 +74,4 @@ Please send Pull Request to the master branch.
 
 ## License
 
-Web artisan plugin is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT) same as OctoberCMS platform.
+Web artisan plugin is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT) same as WinterCMS platform.

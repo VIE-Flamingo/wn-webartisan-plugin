@@ -1,8 +1,8 @@
-<?php namespace VojtaSvoboda\WebArtisan\Models;
+<?php namespace Winter\WebArtisan\Models;
 
 use Config;
-use October\Rain\Database\Model;
-use October\Rain\Database\Traits\Validation as ValidationTrait;
+use Winter\Storm\Database\Model;
+use Winter\Storm\Database\Traits\Validation as ValidationTrait;
 
 class Settings extends Model
 {
@@ -12,7 +12,7 @@ class Settings extends Model
         'System.Behaviors.SettingsModel',
     ];
 
-    public $settingsCode = 'vojtasvoboda_webartisan_settings';
+    public $settingsCode = 'winter_webartisan_settings';
 
     public $settingsFields = 'fields.yaml';
 

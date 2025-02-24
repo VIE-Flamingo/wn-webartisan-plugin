@@ -4,7 +4,7 @@ return [
     'allowedCommands' => [
         'auth:clear-resets',
         'cache:clear',
-        'october:update',
+        'winter:update',
         'queue:flush',
         'queue:forget',
         'queue:restart',
