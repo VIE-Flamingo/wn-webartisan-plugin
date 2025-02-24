@@ -7,4 +7,4 @@ fields:
     hint:
         label: winter.webartisan::lang.settings_fields.hint_label
         type: partial
-        path: $/vojtasvoboda/webartisan/models/settings/partials/_howto.htm
+        path: $/winter/webartisan/models/settings/partials/_howto.htm

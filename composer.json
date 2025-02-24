@@ -1,11 +1,11 @@
 {
-    "name": "vojtasvoboda/webartisan-plugin",
+    "name": "winter/webartisan-plugin",
     "type": "winter-plugin",
     "extra": {
         "installer-name": "webartisan"
     },
     "description": "Webartisan plugin for WinterCMS",
-    "homepage": "https://github.com/vojtasvoboda/oc-webartisan-plugin",
+    "homepage": "https://github.com/winter/oc-webartisan-plugin",
     "keywords": ["winter", "plugin", "webartisan"],
     "license": "MIT",
     "authors": [
